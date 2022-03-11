@@ -44,7 +44,7 @@ public class PersonaDao {
 			resultado = "ok";
 			
 		} catch (SQLException e) {
-			System.out.println("no se pudo registrar la persona, verifique el documento no existe: "+ e.getMessage());
+			System.out.println("No se pudo registrar la persona, verifique el documento no existe: "+ e.getMessage());
 			e.printStackTrace();
 			resultado = "No se pudo registrar la persona";
 		}
@@ -102,7 +102,7 @@ public class PersonaDao {
 		} catch (SQLException e) {
 			System.out.println("Error en la consulta de la persona" +e.getMessage());
 		}
-		
+		System.out.println("PRUEBA DE VALOR EN MIPERSONA "+miPersona);
 		return miPersona;
 	}
 
